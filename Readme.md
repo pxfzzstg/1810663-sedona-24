@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [N K](https://up.htmlacademy.ru/adaptive/24/user/1810663).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/id252055).
 
 ---
 

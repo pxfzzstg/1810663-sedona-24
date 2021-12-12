@@ -1,8 +1,6 @@
 .hashtag__text {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  text-transform: uppercase;
+  @include size-text-title;
+
   text-align: center;
   margin: 0;
 }

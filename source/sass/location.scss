@@ -6,10 +6,9 @@
 }
 
 .location__title {
-  font-size: 21px;
-  line-height: 26px;
+  @include size-text-title;
+
   margin: 0;
-  text-transform: uppercase;
 }
 
 .location__text {

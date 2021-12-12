@@ -1,0 +1,89 @@
+.feedback-form__legend {
+  @include size-text-subtitle;
+
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.feedback-form__fieldset {
+  padding: 0 20px;
+  border: none;
+  margin: 0;
+}
+
+.feedback-form__fieldset--full-name {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 25px;
+
+  .feedback-form__field {
+    display: flex;
+    gap: 14px;
+  }
+
+  .feedback-form__label {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.feedback-form__fieldset--contacts {
+  padding-bottom: 28px;
+
+  .feedback-form__field {
+    display: block;
+
+    &:first-of-type {
+      margin-bottom: 14px;
+    }
+  }
+
+  .feedback-form__label {
+    display: block;
+    padding-bottom: 6px;
+  }
+}
+
+.feedback-form__fieldset--impression {
+  .feedback-form__label {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-left: 75px;
+    padding-bottom: 43px;
+  }
+}
+
+.feedback-form__fieldset--visited-attractions {
+  .feedback-form__label {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-left: 75px;
+    padding-bottom: 54px;
+  }
+}
+
+.feedback-form__fieldset--emotions {
+  padding-bottom: 70px;
+}
+
+.feedback-form__label {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.feedback-form__button {
+  margin: 0 20px;
+}

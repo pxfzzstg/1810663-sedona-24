@@ -21,10 +21,9 @@
 }
 
 .features__title {
+  @include size-text-subtitle;
+
   margin: 0;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
   color: $color-text-bold;
 }
 

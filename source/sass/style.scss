@@ -1,4 +1,5 @@
 @import "./constants.scss";
+@import "./mixins.scss";
 @import "./page-header.scss";
 @import "./page-body.scss";
 @import "./page-main.scss";
@@ -13,6 +14,12 @@
 @import "./social.scss";
 @import "./hashtag.scss";
 @import "./copyright.scss";
+@import "./feedback.scss";
+@import "./feedback-form.scss";
+@import "./input.scss";
+@import "./modal.scss";
+@import "./modal-error.scss";
+@import "./modal-success.scss";
 
 html {
   font-family: "PT Sans", "Arial", sans-serif;

@@ -3,10 +3,9 @@
 }
 
 .advantages__slogan {
+  @include size-text-subtitle;
+
   display: block;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
   padding: 0 20px;
   padding-top: 32px;
   padding-bottom: 17px;
@@ -47,10 +46,9 @@
 }
 
 .advantages__title {
+  @include size-text-subtitle;
+
   margin: 0;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
 }
 
 .advantages__number {

@@ -1,0 +1,30 @@
+.modal-success {
+  padding: 0;
+  padding-top: 30px;
+}
+
+.modal-success__title {
+  @include size-text-subtitle;
+
+  margin: 0;
+}
+
+.modal-success__text {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 0 18px;
+  padding-top: 24px;
+  padding-bottom: 45px;
+  margin: 0 20px;
+}
+
+.modal-success__wrapper {
+  background-color: $color-bg-tertiary;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal-success__button {
+  font-size: 18px;
+}

@@ -1,13 +1,13 @@
 .button {
+  @include size-text-title;
+
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $color-bg-secondary;
   color: $color-text-secondary;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  text-transform: uppercase;
   width: 280px;
   height: 58px;
+  padding: 0;
+  border: none;
 }

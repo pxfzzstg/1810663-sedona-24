@@ -13,26 +13,27 @@
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
+            <img src="img/icon-menu.svg" width="23" height="22" alt="Закрыть">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">
+              <a class="site-list__link">
                 Главная
               </a>
             </li>
-            <li class="site-list__item site-list__item--active">
-              <a>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a class="site-list__link" href="form.html">
                 Форма Отзыва
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 HTML Academy
               </a>
             </li>
@@ -56,7 +57,7 @@
           <ul class="catalog__list">
             <li class="catalog__item">
               <a class="catalog__link" href="#">
-                <img class="catalog__img" src="img/photo-1.jpg" width="280" height="280" alt="Неродные просторы">
+                <img class="catalog__img image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы">
               </a>
               <h3 class="catalog__title">
                 Неродные просторы
@@ -64,14 +65,16 @@
               <p class="catalog__author">
                 Автор фото: Борис
               </p>
-              <button class="catalog__button button" type="button" aria-label="like"></button>
-              <p class="catalog__count">
-                1350
-              </p>
+              <button class="catalog__button button-icon" type="button" aria-label="like">
+                <img src="img/icon-like.svg" width="23" height="21" alt="Нравится">
+                <span class="catalog__count">
+                  1350
+                </span>
+              </button>
             </li>
             <li class="catalog__item">
               <a class="catalog__link" href="#">
-                <img class="catalog__img" src="img/photo-2.jpg" width="280" height="280" alt="Местная растительность">
+                <img class="catalog__img image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность">
               </a>
               <h3 class="catalog__title">
                 Местная растительность
@@ -79,14 +82,16 @@
               <p class="catalog__author">
                 Автор фото: Сергей
               </p>
-              <button class="catalog__button button" type="button" aria-label="like"></button>
-              <p class="catalog__count">
-                143
-              </p>
+              <button class="catalog__button button-icon" type="button" aria-label="like">
+                <img src="img/icon-like.svg" width="23" height="21" alt="Нравится">
+                <span class="catalog__count">
+                  143
+                </span>
+              </button>
             </li>
             <li class="catalog__item">
               <a class="catalog__link" href="#">
-                <img class="catalog__img" src="img/photo-3.jpg" width="280" height="280" alt="Дорога на север">
+                <img class="catalog__img image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
               </a>
               <h3 class="catalog__title">
                 Дорога на север
@@ -94,14 +99,16 @@
               <p class="catalog__author">
                 Автор фото: Петр
               </p>
-              <button class="catalog__button button" type="button" aria-label="like"></button>
-              <p class="catalog__count">
-                96
-              </p>
+              <button class="catalog__button button-icon" type="button" aria-label="like">
+                <img src="img/icon-like.svg" width="23" height="21" alt="Нравится">
+                <span class="catalog__count">
+                  96
+                </span>
+              </button>
             </li>
             <li class="catalog__item">
               <a class="catalog__link" href="#">
-                <img class="catalog__img" src="img/photo-4.jpg" width="280" height="280" alt="Мост дьявола">
+                <img class="catalog__img image" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
               </a>
               <h3 class="catalog__title">
                 Мост дьявола
@@ -109,10 +116,12 @@
               <p class="catalog__author">
                 Автор фото: Антон
               </p>
-              <button class="catalog__button button" type="button" aria-label="Нравится"></button>
-              <p class="catalog__count">
-                254
-              </p>
+              <button class="catalog__button button-icon" type="button" aria-label="Нравится">
+                <img src="img/icon-like.svg" width="23" height="21" alt="Нравится">
+                <span class="catalog__count">
+                  254
+                </span>
+              </button>
             </li>
           </ul>
         </section>
@@ -126,18 +135,24 @@
           <p class="presentation__text">
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
-          <img class="presentation__video" src="img/video.jpg" width="320" height="201" alt="Видеопрезентация">
+          <img class="presentation__video image" src="img/video.jpg" width="320" height="201" alt="Видеопрезентация">
           <div class="presentation__controls presentation-controls">
             <div class="presentation-controls__wrapper">
-              <button class="presentation-controls__button presentation-controls__button--replay button" type="button" aria-label="Повтор"></button>
-              <button class="presentation-controls__button presentation-controls__button--subtitles button" type="button" aria-label="Субтитры"></button>
-              <button class="presentation-controls__button presentation-controls__button--full-screen button" type="button" aria-label="Во весь экран"></button>
+              <button class="presentation-controls__button presentation-controls__button--replay button-icon" type="button" aria-label="Повтор">
+                <img src="img/icon-replay.svg" width="16" height="20" alt="Повтор">
+              </button>
+              <button class="presentation-controls__button presentation-controls__button--subtitles button-icon" type="button" aria-label="Субтитры">
+                <img src="img/icon-subtitles.svg" width="32" height="20" alt="Субтитры">
+              </button>
+              <button class="presentation-controls__button presentation-controls__button--full-screen button-icon" type="button" aria-label="Во весь экран">
+                <img src="img/icon-fullscreen.svg" width="20" height="20" alt="Во весь экран">
+              </button>
             </div>
           </div>
         </section>
       </main>
       <footer class="page-footer">
-        <div class="page-footer__hashtag hashtag">
+        <div class="page-footer__hashtag">
           <p class="hashtag__text">
             #visitsedona
           </p>
@@ -146,17 +161,26 @@
           <ul class="social__list">
             <li class="social__item">
               <a href="" class="social__link social__link--twitter">
-                Мы в Твиттере
+                <span class="visually-hidden">
+                  Мы в Твиттере
+                </span>
+                <img src="img/icon-twitter.svg" width="18" height="15" alt="Твиттер лого">
               </a>
             </li>
             <li class="social__item">
               <a href="" class="social__link social__link--facebook">
-                Мы в Фейсбуке
+                <span class="visually-hidden">
+                  Мы в Фейсбуке
+                </span>
+                <img src="img/icon-facebook.svg" width="9" height="19" alt="Фейсбук лого">
               </a>
             </li>
             <li class="social__item">
               <a href="" class="social__link social__link--youtube">
-                Мы в Ютубе
+                <span class="visually-hidden">
+                  Мы в Ютубе
+                </span>
+                <img src="img/icon-youtube.svg" width="20" height="14" alt="Ютуб лого">
               </a>
             </li>
           </ul>
@@ -165,7 +189,12 @@
           <b class="copyright__text">
             Разработано
           </b>
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+            <span class="visually-hidden">
+              HTML Academy
+            </span>
+            <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="HTML Academy лого">
+          </a>
         </div>
       </footer>
     </div>

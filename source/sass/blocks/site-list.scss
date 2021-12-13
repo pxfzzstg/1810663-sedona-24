@@ -5,15 +5,14 @@
 }
 
 .site-list__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 55px;
   background-color: $color-bg-secondary;
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .site-list__link {

@@ -1,55 +1,29 @@
+@import "./global.scss";
 @import "./constants.scss";
 @import "./mixins.scss";
-@import "./page-header.scss";
-@import "./page-body.scss";
-@import "./page-main.scss";
-@import "./main-nav.scss";
-@import "./site-list.scss";
-@import "./advantages.scss";
-@import "./features.scss";
-@import "./location.scss";
-@import "./button.scss";
-@import "./image.scss";
-@import "./page-footer.scss";
-@import "./social.scss";
-@import "./hashtag.scss";
-@import "./copyright.scss";
-@import "./feedback.scss";
-@import "./feedback-form.scss";
-@import "./input.scss";
-@import "./modal.scss";
-@import "./modal-error.scss";
-@import "./modal-success.scss";
-@import "./button-icon.scss";
-@import "./catalog.scss";
-@import "./presentation.scss";
-
-html {
-  font-family: "PT Sans", "Arial", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-// * {
-//   outline: 1px solid red;
-// }
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@import "blocks/visually-hidden.scss";
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page-main.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/advantages.scss";
+@import "blocks/features.scss";
+@import "blocks/location.scss";
+@import "blocks/button.scss";
+@import "blocks/image.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/hashtag.scss";
+@import "blocks/copyright.scss";
+@import "blocks/feedback.scss";
+@import "blocks/feedback-form.scss";
+@import "blocks/input.scss";
+@import "blocks/modal.scss";
+@import "blocks/modal-error.scss";
+@import "blocks/modal-success.scss";
+@import "blocks/button-icon.scss";
+@import "blocks/catalog.scss";
+@import "blocks/presentation.scss";
+@import "blocks/advantages-primary.scss";

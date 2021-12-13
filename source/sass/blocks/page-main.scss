@@ -1,0 +1,9 @@
+.page-main__image {
+  width: 320px;
+  height: 389px;
+  background-color: $color-bg-secondary;
+  background-image: url("../img/back-mobile.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

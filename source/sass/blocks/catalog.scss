@@ -1,0 +1,59 @@
+.catalog__main-title {
+  @include size-text-title;
+
+  padding-top: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+.catalog__text {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 0 20px;
+  padding-top: 26px;
+  padding-bottom: 48px;
+  margin: 0;
+}
+
+.catalog__list {
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.catalog__item {
+  padding: 22px 0;
+}
+
+.catalog__title {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.catalog__author {
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.catalog__button {
+  position: relative;
+}
+
+.catalog__count {
+  position: absolute;
+  left: 37px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  margin: 0;
+}

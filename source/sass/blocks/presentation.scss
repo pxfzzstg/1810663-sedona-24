@@ -1,0 +1,28 @@
+.presentation {
+  padding-top: 32px;
+}
+
+.presentation__title {
+  @include size-text-title;
+
+  display: block;
+  text-align: center;
+}
+
+.presentation__text {
+  padding: 0 23px;
+  padding-top: 26px;
+  padding-bottom: 33px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.presentation-controls__wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-bg-tertiary;
+  padding: 23px;
+}

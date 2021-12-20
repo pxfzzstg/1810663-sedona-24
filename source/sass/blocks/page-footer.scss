@@ -2,6 +2,12 @@
   padding: 0 20px;
   padding-top: 38px;
   padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-footer__social {

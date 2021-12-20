@@ -1,5 +1,9 @@
 .features {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .features__item {
@@ -17,6 +21,24 @@
 
   &:last-child .features__description {
     padding-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+
+    width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
   }
 }
 

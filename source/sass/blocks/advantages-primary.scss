@@ -1,3 +1,15 @@
+.advantages-primary {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    grid-template-rows: 256px 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 400px 1fr;
+  }
+}
+
 .advantages-primary__wrapper {
   background-color: $color-bg-secondary;
   color: $color-text-secondary;

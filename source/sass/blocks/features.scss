@@ -42,6 +42,18 @@
   }
 }
 
+.features__item--souvenirs {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.features__item--food {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
 .features__title {
   @include size-text-subtitle;
 

@@ -1,6 +1,10 @@
 .modal-success {
   padding: 0;
   padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;
+  }
 }
 
 .modal-success__title {
@@ -27,4 +31,5 @@
 
 .modal-success__button {
   font-size: 18px;
+  margin: 0 auto;
 }

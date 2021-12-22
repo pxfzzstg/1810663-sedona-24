@@ -1,3 +1,7 @@
 .main-nav__toggle {
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

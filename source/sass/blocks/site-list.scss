@@ -2,6 +2,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .site-list__item {
@@ -13,8 +17,21 @@
   text-align: center;
   padding-top: 10px;
   padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-bg;
+    width: 20%;
+
+    &:nth-of-type(3) {
+      margin-left: auto;
+    }
+  }
 }
 
 .site-list__link {
   color: $color-text-secondary;
+
+  @media (min-width: $tablet-width) {
+    color: $color-text;
+  }
 }

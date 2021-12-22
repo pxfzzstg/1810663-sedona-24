@@ -22,10 +22,31 @@
   list-style: none;
   padding: 0 20px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .catalog__item {
   padding: 22px 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr min-content min-content;
+
+    &:first-of-type {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.catalog__link {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .catalog__title {
@@ -35,6 +56,11 @@
   font-weight: bold;
   padding-top: 10px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 }
 
 .catalog__author {
@@ -42,10 +68,19 @@
   line-height: 24px;
   padding-bottom: 10px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
 }
 
 .catalog__button {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / 4;
+  }
 }
 
 .catalog__count {

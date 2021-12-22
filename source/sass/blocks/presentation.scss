@@ -22,7 +22,11 @@
 
 .presentation-controls__wrapper {
   display: flex;
-  justify-content: space-between;
+  gap: 31px;
   background-color: $color-bg-tertiary;
   padding: 23px;
+}
+
+.presentation-controls__button--subtitles {
+  margin-left: auto;
 }

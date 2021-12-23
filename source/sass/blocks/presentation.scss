@@ -20,6 +20,26 @@
   text-align: center;
 }
 
+.presentation__video {
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 200px;
+  }
+}
+
+.presentation__controls {
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 200px;
+  }
+}
+
 .presentation-controls__wrapper {
   display: flex;
   gap: 31px;

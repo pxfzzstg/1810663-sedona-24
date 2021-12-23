@@ -1,3 +1,10 @@
+.feedback-form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .feedback-form__legend {
   @include size-text-subtitle;
 
@@ -43,6 +50,25 @@
     display: block;
     padding-bottom: 6px;
   }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+
+    .feedback-form__field {
+      display: flex;
+    }
+
+    .feedback-form__label {
+      white-space: nowrap;
+      margin: auto 0;
+    }
+  }
 }
 
 .feedback-form__fieldset--impression {
@@ -56,6 +82,11 @@
     font-weight: bold;
     padding-left: 75px;
     padding-bottom: 43px;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1 / 2;
   }
 }
 
@@ -71,10 +102,24 @@
     padding-left: 75px;
     padding-bottom: 54px;
   }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .feedback-form__fieldset--emotions {
   padding-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .feedback-form__label {
@@ -85,4 +130,17 @@
 
 .feedback-form__button {
   margin: 0 20px;
+}
+
+.feedback-form__required-fields {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: auto 0;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: right;
+  }
 }

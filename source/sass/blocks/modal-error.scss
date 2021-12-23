@@ -1,6 +1,10 @@
 .modal-error {
   padding-top: 40px;
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+  }
 }
 
 .modal-error__title {

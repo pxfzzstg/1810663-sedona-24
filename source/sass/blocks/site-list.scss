@@ -15,10 +15,10 @@
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 26px;
     background-color: $color-bg;
     width: 20%;
 
@@ -29,9 +29,42 @@
 }
 
 .site-list__link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 5px;
   color: $color-text-secondary;
 
   @media (min-width: $tablet-width) {
     color: $color-text;
+    padding-top: 16px;
+    padding-bottom: 14px;
+  }
+}
+
+.site-list__link[href] {
+  @media (min-width: $tablet-width) {
+    &:hover {
+      color: $color-bg-secondary;
+    }
+
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+    }
+  }
+}
+
+.site-list__item--active .site-list__link {
+  @media (min-width: $tablet-width) {
+    color: #766357;
+
+    &:hover {
+      color: #766357;
+    }
+
+    &:active {
+      color: #766357;
+      opacity: 1;
+    }
   }
 }

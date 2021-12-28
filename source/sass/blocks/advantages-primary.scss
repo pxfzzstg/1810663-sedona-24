@@ -10,6 +10,26 @@
   }
 }
 
+.advantages-primary--bridge {
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 256px;
+
+    & .advantages-primary__wrapper {
+      grid-column: 2 / -1;
+      grid-row: 1 / 2;
+    }
+
+    & .advantages-primary__image {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 400px;
+  }
+}
+
 .advantages-primary__wrapper {
   background-color: $color-bg-secondary;
   color: $color-text-secondary;

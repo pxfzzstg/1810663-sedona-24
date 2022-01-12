@@ -1,4 +1,4 @@
-.main-nav__toggle_wrapper {
+.main-nav__toggle-wrapper {
   @media (max-width: $mobile-width-only) {
     height: 56px;
   }
@@ -92,33 +92,6 @@
       top: 0;
       width: 320px;
       z-index: 2;
-    }
-
-    & .site-list__item:not(:first-of-type) {
-      border-top: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    & .site-list__item:not(:last-of-type) {
-      border-bottom: 1px solid rgba(1, 1, 1, 0.2);
-    }
-
-    .site-list__item:last-of-type::after {
-      position: absolute;
-      content: "";
-      display: block;
-      width: 320px;
-      height: 7px;
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-      bottom: 0;
-    }
-
-    & .site-list__link[href]:hover {
-      background-color: $color-bg-secondary-hover;
-    }
-
-    & .site-list__link[href]:active {
-      background-color: $color-bg-secondary-active;
-      opacity: 0.3;
     }
   }
 }

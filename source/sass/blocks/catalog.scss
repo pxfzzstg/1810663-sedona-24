@@ -4,6 +4,15 @@
   padding-top: 24px;
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 102px;
+  }
 }
 
 .catalog__text {
@@ -16,6 +25,16 @@
   padding-top: 26px;
   padding-bottom: 48px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 170px;
+    padding-right: 170px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 382px;
+    padding-right: 382px;
+  }
 }
 
 .catalog__list {
@@ -26,6 +45,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 0 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,22 +56,56 @@
 }
 
 .catalog__item {
-  padding: 22px 0;
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+    padding: 22px 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 320px;
+      height: 1px;
+      background-color: #e5e5e5;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr min-content min-content;
+    position: relative;
 
     &:first-of-type {
       grid-column: 1 / -1;
     }
+
+    &:nth-of-type(3n) .catalog__wrapper {
+      background-color: #eaeaea;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-of-type(3n) .catalog__wrapper {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
   }
 }
 
-.catalog__link {
+.catalog__wrapper {
   @media (min-width: $tablet-width) {
-    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 84px;
+    grid-template-rows: 1fr 1fr;
+    background-color: $color-bg-form-control;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: $color-bg;
   }
 }
 
@@ -65,7 +119,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    padding-left: 20px;
   }
 }
 
@@ -77,24 +131,34 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
-    grid-row: 3 / 4;
+    padding-left: 20px;
   }
 }
 
-.catalog__button {
+.catalog__button-wrapper {
   position: relative;
 
   @media (min-width: $tablet-width) {
-    grid-row: 2 / 4;
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+    margin: auto 0;
   }
 }
 
 .catalog__count {
   position: absolute;
-  left: 37px;
+  margin-left: 14px;
+  top: 3px;
   font-family: inherit;
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
-  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $color-bg;
+  }
 }

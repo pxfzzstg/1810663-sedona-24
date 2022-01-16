@@ -1,5 +1,29 @@
 .presentation {
   padding-top: 32px;
+
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 320px;
+      height: 1px;
+      background-color: #e5e5e5;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-top: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 63px;
+  }
 }
 
 .presentation__title {
@@ -7,6 +31,10 @@
 
   display: block;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .presentation__text {
@@ -18,11 +46,21 @@
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 161px;
+    padding-right: 161px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 377px;
+    padding-right: 377px;
+  }
 }
 
 .presentation__video {
   @media (min-width: $tablet-width) {
-    padding: 0 20px;
+    padding: 0 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,7 +70,11 @@
 
 .presentation__controls {
   @media (min-width: $tablet-width) {
-    padding: 0 20px;
+    position: absolute;
+    bottom: 0;
+    padding: 0 60px;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,6 +87,10 @@
   gap: 31px;
   background-color: $color-bg-tertiary;
   padding: 23px;
+
+  @media (min-width: $tablet-width) {
+    background-color: rgb(0, 0, 0, 0.6);
+  }
 }
 
 .presentation-controls__button--subtitles {

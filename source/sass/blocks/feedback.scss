@@ -4,6 +4,16 @@
   margin: 0;
   text-align: center;
   padding-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+    padding-top: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 114px;
+  }
 }
 
 .feedback__text {
@@ -14,4 +24,17 @@
   margin: 0;
   padding-top: 21px;
   padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-bottom: 78px;
+    padding-left: 166px;
+    padding-right: 166px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 57px;
+    padding-left: 382px;
+    padding-right: 382px;
+  }
 }

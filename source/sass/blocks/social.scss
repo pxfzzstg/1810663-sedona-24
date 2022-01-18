@@ -14,4 +14,12 @@
   background-color: $color-bg-secondary;
   width: 48px;
   height: 48px;
+
+  &:hover {
+    background-color: $color-bg-secondary-hover;
+  }
+
+  &:active {
+    background-color: $color-bg-secondary-active;
+  }
 }

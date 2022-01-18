@@ -9,4 +9,13 @@
   padding-top: 18px;
   padding-bottom: 14px;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-bg-secondary-hover;
+  }
+
+  &:active {
+    background-color: $color-bg-secondary-active;
+  }
 }

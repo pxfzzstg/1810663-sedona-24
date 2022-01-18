@@ -12,14 +12,15 @@
         <a class="page-header__logo">
           <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <img src="img/icon-menu.svg" width="23" height="22" alt="Закрыть">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+        <nav class="main-nav main-nav--nojs">
+          <div class="main-nav__toggle-wrapper">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
@@ -28,8 +29,8 @@
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">
                 Форма Отзыва
               </a>
             </li>
@@ -91,16 +92,16 @@
                 Ваше общее впечатление:
               </legend>
               <label class="feedback-form__field">
-                <input class="visually-hidden feedback-form__control radio" type="radio" name="impression" value="positive" checked>
-                <span class="feedback-form__label">Скорее положительное</span>
+                <input class="visually-hidden feedback-form__control" type="radio" name="impression" value="positive" checked>
+                <span class="feedback-form__label feedback-form__label--radio">Скорее положительное</span>
               </label>
               <label class="feedback-form__field">
-                <input class="visually-hidden feedback-form__control radio" type="radio" name="impression" value="negative">
-                <span class="feedback-form__label">Скорее отрицательное</span>
+                <input class="visually-hidden feedback-form__control" type="radio" name="impression" value="negative">
+                <span class="feedback-form__label feedback-form__label--radio">Скорее отрицательное</span>
               </label>
               <label class="feedback-form__field">
-                <input class="visually-hidden feedback-form__control radio" type="radio" name="impression" value="neutral">
-                <span class="feedback-form__label">Затрудняюсь ответить</span>
+                <input class="visually-hidden feedback-form__control" type="radio" name="impression" value="neutral">
+                <span class="feedback-form__label feedback-form__label--radio">Затрудняюсь ответить</span>
               </label>
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__fieldset--visited-attractions">
@@ -108,20 +109,20 @@
                 Посещенные достопримечательности:
               </legend>
               <label class="feedback-form__field">
-                <input class="visually-hidden feedback-form__control checkbox" type="checkbox" name="visited_attractions" value="bridge" checked>
-                <span class="feedback-form__label">Мост Дьявола</span>
+                <input class="visually-hidden feedback-form__control" type="checkbox" name="visited_attractions" value="bridge" checked>
+                <span class="feedback-form__label feedback-form__label--checkbox">Мост Дьявола</span>
               </label>
               <label class="feedback-form__field">
-                <input class="visually-hidden feedback-form__control checkbox" type="checkbox" name="visited_attractions" value="mountain" checked>
-                <span class="feedback-form__label">Гора-Колокол</span>
+                <input class="visually-hidden feedback-form__control" type="checkbox" name="visited_attractions" value="mountain" checked>
+                <span class="feedback-form__label feedback-form__label--checkbox">Гора-Колокол</span>
               </label>
               <label class="feedback-form__field">
-                <input class="visually-hidden feedback-form__control checkbox" type="checkbox" name="visited_attractions" value="park" checked>
-                <span class="feedback-form__label">Слайд-парк</span>
+                <input class="visually-hidden feedback-form__control" type="checkbox" name="visited_attractions" value="park" checked>
+                <span class="feedback-form__label feedback-form__label--checkbox">Слайд-парк</span>
               </label>
               <label class="feedback-form__field">
-                <input class="visually-hidden feedback-form__control checkbox" type="checkbox" name="visited_attractions" value="rocks">
-                <span class="feedback-form__label">Красные скалы</span>
+                <input class="visually-hidden feedback-form__control" type="checkbox" name="visited_attractions" value="rocks">
+                <span class="feedback-form__label feedback-form__label--checkbox">Красные скалы</span>
               </label>
             </fieldset>
             <fieldset class="feedback-form__fieldset feedback-form__fieldset--emotions">
@@ -207,5 +208,8 @@
         <button class="modal-success__button button" type="button">Закрыть окно</button>
       </div>
     </section>
+
+    <script src="js/app.js"></script>
+
   </body>
 </html>

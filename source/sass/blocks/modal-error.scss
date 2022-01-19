@@ -4,6 +4,8 @@
 
   @media (min-width: $tablet-width) {
     width: 400px;
+    padding-top: 53px;
+    padding-bottom: 49px;
   }
 }
 
@@ -11,6 +13,13 @@
   @include size-text-subtitle;
 
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .modal-error__text {
@@ -21,10 +30,19 @@
   padding-top: 24px;
   padding-bottom: 22px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .modal-error__button {
   width: 180px;
   font-size: 18px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 272px;
+  }
 }

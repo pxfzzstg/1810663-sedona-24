@@ -10,4 +10,45 @@
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+@mixin feedback-form-line {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 100%;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+      top: 50%;
+      left: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 123px;
+      height: 1px;
+      background-color: #dbdbdb;
+      top: 50%;
+      right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 280px;
+    }
+
+    &::after {
+      width: 280px;
+    }
+  }
 }

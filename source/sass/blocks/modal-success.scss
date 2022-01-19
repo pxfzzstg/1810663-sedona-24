@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     width: 640px;
+    padding-top: 55px;
   }
 }
 
@@ -11,6 +12,11 @@
   @include size-text-subtitle;
 
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .modal-success__text {
@@ -21,15 +27,28 @@
   padding-top: 24px;
   padding-bottom: 45px;
   margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
 }
 
 .modal-success__wrapper {
   background-color: $color-bg-tertiary;
   padding: 20px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px;
+  }
 }
 
 .modal-success__button {
   font-size: 18px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }

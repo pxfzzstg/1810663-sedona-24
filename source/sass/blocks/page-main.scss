@@ -30,4 +30,31 @@
     background-position: 0;
     width: 1200px;
   }
+
+  img {
+    @media (min-width: $tablet-width) {
+      width: 461px;
+      height: 350px;
+    }
+  }
+}
+
+.page-main__image--cut {
+  @media (max-width: $mobile-width-only) {
+    height: 158px;
+    background-image: url("../img/back-form-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-form-mobile@2x.jpg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 290px;
+    background-position: top -228px left -216px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: top -228px left 0;
+  }
 }

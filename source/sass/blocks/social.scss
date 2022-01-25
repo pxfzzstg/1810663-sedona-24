@@ -22,4 +22,12 @@
   &:active {
     background-color: $color-bg-secondary-active;
   }
+
+  &:active .social__icon {
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: #ffffff;
 }

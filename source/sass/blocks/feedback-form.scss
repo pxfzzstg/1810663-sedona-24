@@ -252,6 +252,11 @@
   &:checked + .feedback-form__label--radio::before {
     background-color: $color-text;
   }
+
+  &:checked:active + .feedback-form__label--radio::before,
+  &:checked:focus + .feedback-form__label--radio::before {
+    background-color: rgb(33, 33, 33, 0.3);
+  }
 }
 // radio end
 
@@ -286,6 +291,11 @@
     content: url("../img/tick.svg");
     margin: auto;
   }
+
+  &:checked:active + .feedback-form__label--checkbox::before,
+  &:checked:focus + .feedback-form__label--checkbox::before {
+    content: url("../img/tick-active.svg");
+  }
 }
 // checkbox end
 
@@ -310,4 +320,20 @@
   @media (min-width: $desktop-width) {
     width: 480px;
   }
+}
+
+.feedback-form__input-group {
+  display: flex;
+}
+
+.feedback-form__icon {
+  background-color: #e6e6e6;
+}
+
+.feedback-form__icon--phone {
+  padding: 20px;
+}
+
+.feedback-form__icon--mail {
+  padding: 23px;
 }

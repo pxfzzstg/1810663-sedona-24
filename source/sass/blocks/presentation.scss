@@ -96,3 +96,27 @@
 .presentation-controls__button--subtitles {
   margin-left: auto;
 }
+
+.presentation-controls__icon {
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: rgb(33, 33, 33, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    fill: #ffffff;
+
+    &:hover {
+      fill: rgb(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      fill: rgb(255, 255, 255, 0.3);
+    }
+  }
+}

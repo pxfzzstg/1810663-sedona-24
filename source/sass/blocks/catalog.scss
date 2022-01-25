@@ -145,6 +145,16 @@
   }
 }
 
+.catalog__icon-like {
+  fill: #000000;
+  opacity: 0.3;
+
+  @media (min-width: $desktop-width) {
+    fill: #ffffff;
+    opacity: 1;
+  }
+}
+
 .catalog__count {
   position: absolute;
   margin-left: 14px;

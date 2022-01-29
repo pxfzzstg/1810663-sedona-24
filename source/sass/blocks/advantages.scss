@@ -39,8 +39,8 @@
     padding-bottom: 52px;
   }
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 54px;
+  @media (min-width: $desktop-width) {
+    padding-bottom: 40px;
   }
 }
 
@@ -85,10 +85,6 @@
     padding-bottom: 41px;
     padding-left: 40px;
     padding-right: 40px;
-
-    &:nth-of-type(5) .advantages__title {
-      padding: 0 20px;
-    }
   }
 }
 
@@ -96,6 +92,15 @@
   @include size-text-subtitle;
 
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+    padding-top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 85px;
+  }
 }
 
 .advantages__title-break {
@@ -119,6 +124,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-top: 5px;
   }
 }
 

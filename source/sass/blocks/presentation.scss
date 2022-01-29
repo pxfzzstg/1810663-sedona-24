@@ -1,5 +1,5 @@
 .presentation {
-  padding-top: 32px;
+  padding-top: 29px;
 
   @media (max-width: $mobile-width-only) {
     position: relative;
@@ -18,7 +18,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding-top: 53px;
+    padding-top: 64px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,7 +27,7 @@
 }
 
 .presentation__title {
-  @include size-text-title;
+  @include size-text-subtitle;
 
   display: block;
   text-align: center;
@@ -48,6 +48,8 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    padding-top: 32px;
+    padding-bottom: 79px;
     padding-left: 161px;
     padding-right: 161px;
   }

@@ -3,6 +3,10 @@
   line-height: 26px;
   font-weight: normal;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 31px;
+  }
 }
 
 .copyright__icon {

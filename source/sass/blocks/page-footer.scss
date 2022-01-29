@@ -12,6 +12,14 @@
   }
 }
 
+.page-footer--catalog {
+  padding-top: 77px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 43px;
+  }
+}
+
 .page-footer__hashtag {
   @media (min-width: $tablet-width) {
     width: 256px;

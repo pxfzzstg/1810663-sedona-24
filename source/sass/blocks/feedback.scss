@@ -1,9 +1,9 @@
 .feedback__title {
-  @include size-text-title;
+  @include size-text-subtitle;
 
   margin: 0;
   text-align: center;
-  padding-top: 26px;
+  padding-top: 37px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -22,8 +22,8 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding-top: 21px;
-  padding-bottom: 16px;
+  padding-top: 28px;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     padding-top: 26px;

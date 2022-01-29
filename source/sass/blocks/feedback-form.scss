@@ -84,6 +84,7 @@
 
   .feedback-form__label {
     display: block;
+    padding-left: 21px;
     padding-bottom: 6px;
   }
 
@@ -199,7 +200,7 @@
 }
 
 .feedback-form__fieldset--emotions {
-  padding-bottom: 70px;
+  padding-bottom: 48px;
 
   .feedback-form__legend {
     @include feedback-form-line;

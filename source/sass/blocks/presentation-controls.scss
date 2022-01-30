@@ -1,4 +1,5 @@
 .presentation-controls__wrapper {
+  position: relative;
   display: flex;
   gap: 31px;
   background-color: $color-bg-tertiary;
@@ -44,5 +45,28 @@
     &:active {
       fill: rgb(255, 255, 255, 0.3);
     }
+  }
+}
+
+.presentation-controls__volume-scale {
+  position: absolute;
+  left: 22px;
+  top: -20px;
+
+  @media (min-width: $tablet-width) {
+    left: 93px;
+    top: 45px;
+  }
+}
+
+.presentation-controls__volume-slider {
+  position: absolute;
+  left: 56px;
+  transform: translate(0, -75%);
+  top: -15px;
+
+  @media (min-width: $tablet-width) {
+    left: 204px;
+    top: 50px;
   }
 }

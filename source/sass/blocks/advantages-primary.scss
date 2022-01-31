@@ -1,12 +1,4 @@
 .advantages-primary {
-  .advantages__title {
-    padding-top: 33px;
-  }
-
-  .advantages__description {
-    padding: 0;
-  }
-
   @media (max-width: $mobile-width-only) {
     &:first-of-type .advantages-primary__wrapper {
       position: relative;
@@ -26,10 +18,6 @@
     display: grid;
     grid-template-columns: 256px 1fr;
     grid-template-rows: 256px 1fr;
-
-    .advantages__title {
-      padding-top: 11px;
-    }
 
     &:nth-of-type(2) .advantages-primary__wrapper {
       padding-top: 46px;
@@ -54,10 +42,6 @@
 }
 
 .advantages-primary--bridge {
-  .advantages__title {
-    padding-top: 0;
-  }
-
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 256px;
 

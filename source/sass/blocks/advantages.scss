@@ -56,6 +56,12 @@
 }
 
 .advantages__item {
+  &:nth-of-type(2) {
+    .advantages__title {
+      padding-top: 0;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     &:first-of-type {
       grid-column: 1 / -1;
@@ -97,6 +103,22 @@
     &:nth-of-type(4) .advantages__description {
       padding-right: 30px;
       padding-left: 30px;
+    }
+  }
+}
+
+.advantages__item--primary {
+  .advantages__title {
+    padding-top: 33px;
+  }
+
+  .advantages__description {
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    .advantages__title {
+      padding-top: 11px;
     }
   }
 }

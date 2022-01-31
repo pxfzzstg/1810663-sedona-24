@@ -3,6 +3,10 @@
     padding-top: 33px;
   }
 
+  .advantages__description {
+    padding: 0;
+  }
+
   @media (max-width: $mobile-width-only) {
     &:first-of-type .advantages-primary__wrapper {
       position: relative;
@@ -36,6 +40,16 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 400px 1fr;
+
+    &:first-of-type .advantages-primary__wrapper {
+      padding-top: 37px;
+      padding-bottom: 29px;
+    }
+
+    &:nth-of-type(2) .advantages-primary__wrapper {
+      padding-top: 53px;
+      padding-bottom: 13px;
+    }
   }
 }
 

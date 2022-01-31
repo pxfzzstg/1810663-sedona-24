@@ -236,11 +236,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 43px;
+    grid-template-columns: 259px 259px 237px 205px;
 
     .feedback-form__legend {
       padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 43px;
     }
 
     .feedback-form__field:nth-child(even) {
@@ -249,6 +250,10 @@
 
     .feedback-form__field:nth-child(odd) {
       margin-left: 0;
+    }
+
+    .feedback-form__label {
+      padding-left: 80px;
     }
   }
 }

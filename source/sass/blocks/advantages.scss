@@ -116,6 +116,10 @@
     padding-left: 40px;
     padding-right: 39px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 62px;
+  }
 }
 
 .advantages__title {
@@ -140,8 +144,8 @@
 }
 
 .advantages__number {
-  padding-top: 10px;
-  padding-bottom: 21px;
+  padding-top: 12px;
+  padding-bottom: 19px;
   margin: 0;
 }
 

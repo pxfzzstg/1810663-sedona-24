@@ -6,12 +6,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-top: 62px;
+    padding-top: 59px;
     padding-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 81px;
+    padding-top: 60px;
     padding-bottom: 66px;
   }
 }
@@ -38,14 +38,24 @@
   @media (min-width: $tablet-width) {
     padding-top: 32px;
     padding-bottom: 37px;
-    padding-left: 167px;
-    padding-right: 167px;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 43px;
-    padding-left: 382px;
-    padding-right: 382px;
+  }
+}
+
+.location__text-content--mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.location__text-content--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }
 

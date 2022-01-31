@@ -223,12 +223,13 @@
                   <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
                 </svg>
               </button>
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/volume-scale-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/volume-scale-tablet.svg">
-                <img class="presentation-controls__volume-scale" src="img/volume-scale.svg" alt="Шкала перемотки">
-              </picture>
-              <img class="presentation-controls__volume-slider" src="img/icon-volume-slider.svg" alt="Ползунок перемотки">
+              <div class="presentation-controls__volume-scale" >
+                <button class="presentation-controls__volume-slider button-icon" type="button" aria-label="Ползунок перемотки">
+                  <svg width="11" height="11">
+                    <use xlink:href="img/sprite.svg#icon-volume-slider"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </section>

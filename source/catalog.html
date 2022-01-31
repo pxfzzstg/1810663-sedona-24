@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
@@ -14,7 +15,11 @@
     <div class="page-body__wrapper">
       <header class="page-header">
         <a class="page-header__logo" href="index.html">
-          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+            <img src="img/logotype-mobile.svg" alt="Седона">
+          </picture>
         </a>
         <nav class="main-nav main-nav--nojs">
           <div class="main-nav__toggle-wrapper">
@@ -51,6 +56,7 @@
           Информационный сайт для туристов
         </h1>
         <section class="page-main__image page-main__image--cut">
+          <h2 class="visually-hidden">Изображение природы Седоны</h2>
           <img src="img/text-form.svg" width="229" height="39" alt="Sedona">
         </section>
         <section class="catalog">
@@ -218,11 +224,18 @@
                   <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
                 </svg>
               </button>
+              <div class="presentation-controls__volume-scale" >
+                <button class="presentation-controls__volume-slider button-icon" type="button" aria-label="Ползунок перемотки">
+                  <svg width="11" height="11">
+                    <use xlink:href="img/sprite.svg#icon-volume-slider"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer page-footer--catalog">
         <div class="page-footer__hashtag hashtag">
           <p class="hashtag__text">
             #visitsedona

@@ -4,6 +4,7 @@
   background-color: $color-bg-form-control;
   font-size: 18px;
   line-height: 26px;
+  font-family: inherit;
   font-weight: bold;
   padding: 0;
   padding-left: 22px;
@@ -12,6 +13,7 @@
 
   &::placeholder {
     color: $color-text-bold;
+    font-family: inherit;
   }
 
   &:hover {
@@ -31,4 +33,8 @@
   resize: none;
   font-family: inherit;
   padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 19px;
+  }
 }

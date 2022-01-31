@@ -1,12 +1,43 @@
 .advantages-primary {
+  @media (max-width: $mobile-width-only) {
+    &:first-of-type .advantages-primary__wrapper {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        width: 320px;
+        height: 57px;
+        content: url("../img/triangle-reversed.svg");
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 256px 1fr;
     grid-template-rows: 256px 1fr;
+
+    &:nth-of-type(2) .advantages-primary__wrapper {
+      padding-top: 46px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 400px 1fr;
+
+    &:first-of-type .advantages-primary__wrapper {
+      padding-top: 37px;
+      padding-bottom: 29px;
+    }
+
+    &:nth-of-type(2) .advantages-primary__wrapper {
+      padding-top: 53px;
+      padding-bottom: 13px;
+    }
   }
 }
 
@@ -36,4 +67,8 @@
   padding: 0 20px;
   padding-top: 40px;
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 31px;
+  }
 }

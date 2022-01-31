@@ -4,7 +4,8 @@
   background-color: $color-bg-form-control;
   font-size: 18px;
   line-height: 26px;
-  font-weight: normal;
+  font-family: inherit;
+  font-weight: bold;
   padding: 0;
   padding-left: 22px;
   border: none;
@@ -12,7 +13,7 @@
 
   &::placeholder {
     color: $color-text-bold;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: inherit;
   }
 
   &:hover {
